@@ -19,21 +19,26 @@ userSchema.pre("save", async function(next){
 - next() is used to tell that the middleware is executed , continue the process
 
 ## Types
-1. Document middleware ->    
-Runs on individual document(data).  
-This refers to document  
-Used with save, init, validate, updateOne, deleteOne
+1. **Document middleware** ->    
+- Runs on individual document(data).  
+- This refers to document  
+- Used with:
+  - save 
+  -  init
+  - validate
+  - updateOne
+  - deleteOne
 
-2. Query middleware->   
-Runs on query object  
-This refers to query object  
-Used with find, findOne
+2. **Query middleware**->   
+  - Runs on query object  
+  - This refers to query object  
+  - Used with find, findOne
 
-3. Model middlewares ->   
-Runs on model function  
-This refers to model
-Used with inserMany
+3. **Model middlewares** ->   
+  - Runs on model function  
+  - This refers to model
+  - Used with inserMany
 
-4. Aggregate middlewares ->   
-Runs on aggregate pipeline  
-This refers to aggregate object
+4. **Aggregate middlewares** ->   
+  - Runs on aggregate pipeline  
+  - This refers to aggregate object
